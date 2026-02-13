@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Frontend Developer",
+    "company": "TechGlobal Inc.",
+    "type": "Full-time",
+    "location": "Remote (Worldwide)",
+    "salary": "$4,000 - $6,000 / mo",
+    "category": "Development",
+    "isFeatured": true,
+    "postedAt": "2 days ago",
+    "logo": "https://placehold.co/50x50/0F172A/FFF?text=TG"
+  },
+  {
+    "id": 2,
+    "title": "Virtual Assistant",
+    "company": "Swift Assist",
+    "type": "Contract",
+    "location": "Remote (Africa Only)",
+    "salary": "$800 - $1,200 / mo",
+    "category": "Admin",
+    "isFeatured": true,
+    "postedAt": "5 hours ago",
+    "logo": "https://placehold.co/50x50/10B981/FFF?text=SA"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Specialist",
+    "company": "Growth Hacking Agency",
+    "type": "Part-time",
+    "location": "Remote (Ghana)",
+    "salary": "$1,500 / mo",
+    "category": "Marketing",
+    "isFeatured": true,
+    "postedAt": "1 day ago",
+    "logo": "https://placehold.co/50x50/F59E0B/FFF?text=GH"
+  },
+  {
+    "id": 4,
+    "title": "Customer Support Rep",
+    "company": "SupportFlow",
+    "type": "Full-time",
+    "location": "Remote (Worldwide)",
+    "salary": "$2,000 / mo",
+    "category": "Support",
+    "isFeatured": false,
+    "postedAt": "3 days ago",
+    "logo": "https://placehold.co/50x50/333/FFF?text=SF"
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Designer",
+    "company": "Creative Studio",
+    "type": "Freelance",
+    "location": "Remote (Worldwide)",
+    "salary": "$50 / hr",
+    "category": "Design",
+    "isFeatured": false,
+    "postedAt": "1 week ago",
+    "logo": "https://placehold.co/50x50/6366f1/FFF?text=CS"
+  },
+  {
+    "id": 6,
+    "title": "Python Backend Engineer",
+    "company": "DataSystems",
+    "type": "Full-time",
+    "location": "Remote (Africa Only)",
+    "salary": "$3,500 / mo",
+    "category": "Development",
+    "isFeatured": false,
+    "postedAt": "2 days ago",
+    "logo": "https://placehold.co/50x50/ec4899/FFF?text=DS"
+  },
+  {
+    "id": 7,
+    "title": "Social Media Manager",
+    "company": "Viral Trends",
+    "type": "Part-time",
+    "location": "Remote (Ghana)",
+    "salary": "$600 / mo",
+    "category": "Marketing",
+    "isFeatured": false,
+    "postedAt": "4 hours ago",
+    "logo": "https://placehold.co/50x50/8b5cf6/FFF?text=VT"
+  }
+]

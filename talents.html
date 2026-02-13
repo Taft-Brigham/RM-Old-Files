@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Vetted Talent | Remote Market</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Remote<span>Market</span>.</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Find Jobs</a></li>
+                    <li><a href="talents.html" style="color: var(--secondary);">Find Talents</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+                <a href="employer-login.html" class="btn btn-primary">Employer Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <section class="page-header" style="background: var(--primary);">
+        <div class="container">
+            <h1>Hire Vetted Ghanaian Talent</h1>
+            <p>Access a pool of pre-screened professionals ready to work remotely.</p>
+        </div>
+    </section>
+
+    <!-- Talent Grid -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <!-- Optional Filter Placeholder -->
+            <div style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center;">
+                <h3>Browse Profiles</h3>
+                <span style="color: var(--text-light); font-size: 0.9rem;">Showing verified professionals</span>
+            </div>
+
+            <div id="talent-container" class="talent-grid">
+                <!-- Javascript will load profiles here -->
+                <p>Loading talent profiles...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--primary); color: white; padding: 50px 0;">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2023 Remote Market. Empowering the Future of Work.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/talents.js"></script>
+</body>
+
+</html>

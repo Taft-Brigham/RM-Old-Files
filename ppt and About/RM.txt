@@ -18,3 +18,4 @@ Inclusivity: Embracing diversity and empowering individuals from all backgrounds
 Quality: Delivering exceptional service and fostering long-term relationships with clients and candidates.
 Passion: Fueling curiosity, playfulness, and excitement in the pursuit of meaningful work.
 
+The vetted talents page should only be accessible to those who have paid for and posted jobs on the site 

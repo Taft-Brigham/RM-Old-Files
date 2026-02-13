@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Remote Market</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- Simple Nav -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="index.html">Remote<span>Market</span>.</a></div>
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h2 style="margin-bottom: 20px;">Welcome Back</h2>
+            <p style="margin-bottom: 30px; color: var(--text-light);">Access your dashboard</p>
+
+            <form
+                onsubmit="event.preventDefault(); alert('This is a demo project. Login is simulated.'); window.location.href='index.html';">
+                <div class="form-group" style="text-align: left;">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" required>
+                </div>
+
+                <div class="form-group" style="text-align: left;">
+                    <label>Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Don't have an account? <a href="talent-apply.html"
+                    style="color: var(--secondary); font-weight: 600;">Join Now</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

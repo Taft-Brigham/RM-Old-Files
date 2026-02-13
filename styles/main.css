@@ -1,0 +1,710 @@
+/* --- 1. Variables & Reset --- */
+:root {
+    --primary: #0F172A;
+    /* Midnight Blue */
+    --secondary: #10B981;
+    /* Emerald Green */
+    --accent: #F59E0B;
+    /* Amber Gold */
+    --bg-light: #F8FAFC;
+    /* Light Grey Background */
+    --text-dark: #1E293B;
+    /* Dark Text */
+    --text-light: #64748B;
+    /* Grey Text */
+    --white: #FFFFFF;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- 2. Typography & Utilities --- */
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #1e293b;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: #059669;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: var(--text-light);
+}
+
+/* --- 3. Navbar --- */
+header {
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+/* --- 4. Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #CBD5E1;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* --- 5. Job Cards --- */
+.jobs-section {
+    padding: 80px 0;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.job-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border: 1px solid #E2E8F0;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary);
+}
+
+.job-card.featured::before {
+    content: "Featured";
+    background-color: var(--accent);
+    color: var(--primary);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-bottom-left-radius: var(--radius);
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.job-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.job-info h3 {
+    font-size: 1.2rem;
+}
+
+.job-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.job-tags {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #F1F5F9;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F1F5F9;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.salary {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.apply-link {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    /* We will add a mobile menu later */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* --- 6. Jobs Page Specifics --- */
+.page-header {
+    background-color: var(--primary);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.search-container {
+    background: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-top: -30px;
+    /* Pulls it up into the header slightly */
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.search-input,
+.filter-select {
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.search-input {
+    flex: 2;
+}
+
+.filter-select {
+    flex: 1;
+}
+
+.jobs-container-full {
+    padding: 60px 0;
+    min-height: 60vh;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-light);
+    font-size: 1.2rem;
+}
+
+/* --- 7. Application Form Styles --- */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    padding: 80px 0;
+}
+
+.apply-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.apply-content p {
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+.benefit-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.benefit-list li::before {
+    content: "✔";
+    color: var(--secondary);
+    font-weight: bold;
+    background: #DCFCE7;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.apply-form {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid #E2E8F0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Success Message State (Hidden by default) */
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    background: #DCFCE7;
+    border-radius: var(--radius);
+    color: #064E3B;
+}
+
+.success-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- 8. Talent Directory Styles --- */
+.talent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.talent-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid #E2E8F0;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.talent-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary);
+}
+
+.talent-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid var(--bg-light);
+    object-fit: cover;
+}
+
+.verified-badge {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    background: #DCFCE7;
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+}
+
+.talent-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.talent-title {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.talent-rate {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.skill-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.skill-pill {
+    background: #F1F5F9;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--text-dark);
+}
+
+/* --- 9. Resources / Blog Styles --- */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.resource-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+    border: 1px solid #E2E8F0;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-img {
+    width: 100%;
+    height: 200px;
+    background-color: #CBD5E1;
+    /* Placeholder grey */
+    object-fit: cover;
+}
+
+.resource-content {
+    padding: 25px;
+}
+
+.resource-category {
+    color: var(--secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.resource-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.resource-excerpt {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* --- 10. Simple Login Page Styles --- */
+.login-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-light);
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* --- 11. Detail Page Styles --- */
+.detail-header {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.detail-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius);
+    object-fit: contain;
+}
+
+.detail-info h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.detail-meta {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.content-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F1F5F9;
+    padding-bottom: 10px;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.content-box ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-box li {
+    margin-bottom: 10px;
+}
+
+.sidebar-box {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid #E2E8F0;
+}
+
+.sidebar-item {
+    margin-bottom: 20px;
+}
+
+.sidebar-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sidebar-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* Talent Specifics */
+.profile-header {
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .detail-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Kwame Mensah",
+    "title": "Full Stack Developer",
+    "location": "Accra, Ghana",
+    "rate": "$25/hr",
+    "category": "Development",
+    "skills": ["React", "Node.js", "MongoDB"],
+    "avatar": "https://placehold.co/100x100/0F172A/FFF?text=KM"
+  },
+  {
+    "id": 2,
+    "name": "Ama Osei",
+    "title": "UI/UX Designer",
+    "location": "Kumasi, Ghana",
+    "rate": "$30/hr",
+    "category": "Design",
+    "skills": ["Figma", "Adobe XD", "Prototyping"],
+    "avatar": "https://placehold.co/100x100/10B981/FFF?text=AO"
+  },
+  {
+    "id": 3,
+    "name": "Sarah Boateng",
+    "title": "Virtual Assistant",
+    "location": "Remote (Ghana)",
+    "rate": "$15/hr",
+    "category": "Admin",
+    "skills": ["Data Entry", "Email Mgmt", "Canva"],
+    "avatar": "https://placehold.co/100x100/F59E0B/FFF?text=SB"
+  },
+  {
+    "id": 4,
+    "name": "Emmanuel Addo",
+    "title": "Digital Marketer",
+    "location": "Accra, Ghana",
+    "rate": "$20/hr",
+    "category": "Marketing",
+    "skills": ["SEO", "Google Ads", "Content"],
+    "avatar": "https://placehold.co/100x100/333/FFF?text=EA"
+  },
+  {
+    "id": 5,
+    "name": "Grace Tetteh",
+    "title": "Content Writer",
+    "location": "Tema, Ghana",
+    "rate": "$18/hr",
+    "category": "Writing",
+    "skills": ["Copywriting", "Editing", "Blogs"],
+    "avatar": "https://placehold.co/100x100/6366f1/FFF?text=GT"
+  },
+  {
+    "id": 6,
+    "name": "David Asante",
+    "title": "Python Developer",
+    "location": "Remote (Ghana)",
+    "rate": "$35/hr",
+    "category": "Development",
+    "skills": ["Python", "Django", "AWS"],
+    "avatar": "https://placehold.co/100x100/ec4899/FFF?text=DA"
+  }
+]

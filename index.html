@@ -1,65 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>RemortMarket</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
-    <body> 
-        <header> 
-            <nav> 
-                <div class="logo"> 
-                    <img src="logo-Icon.png" alt="RemoteMarket Logo"> 
-                    <h1>RemoteMarket</h1> 
-                </div> 
-                <ul> 
-                    <li><a href="#about">About</a></li> 
-                    <li><a href="#jobs">Jobs</a></li> 
-                    <li><a href="#contact">Contact</a></li> 
-                </ul> 
-            </nav> 
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Market | Bridging Talent to Opportunities</title>
 
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
 
-<section id="hero">
-    <div class="hero-content">
-        <h2>Your Gateway to Remote Work</h2>
-        <p>Find your dream job from anywhere in the world.</p>
-        <a href="#jobs" class="cta-button">Browse Jobs</a>
-    </div>
-</section>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-<section id="about">
-    <div class="about-content">
-        <h2>About RemoteMarket</h2>
-        <p>RemoteMarket connects talented individuals with remote job opportunities. Our mission is to empower lives through remote work.</p>
-    </div>
-</section>
+<body>
 
-<section id="jobs">
-    <div class="job-listings">
-        <!-- Dynamically generated job listings go here -->
-    </div>
-</section>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Remote<span>Market</span>.</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Find Jobs</a></li>
+                    <li><a href="talents.html">Find Talents</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-primary">Sign In / Join</a>
+            </nav>
+        </div>
+    </header>
 
-<section id="contact">
-    <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="submit_contact_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bridging Global Talent<br>to Remote Opportunities</h1>
+            <p>The safest place for Ghanaian professionals to find verified remote work and for employers to hire vetted
+                talent scam-free.</p>
+            <div class="hero-buttons">
+                <a href="jobs.html" class="btn btn-secondary">Find a Job</a>
+                <a href="talents.html" class="btn btn-primary">Hire Talent</a>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2024 RemoteMarket. All rights reserved.</p>
-</footer>
+    <!-- Featured Jobs Section -->
+    <section class="jobs-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Opportunities</h2>
+                <p>Verified, high-quality roles curated for you.</p>
+            </div>
+
+            <!-- JavaScript will inject jobs here -->
+            <div id="featured-jobs-container" class="job-grid">
+                <!-- Loading State -->
+                <p>Loading opportunities...</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="jobs.html" class="btn btn-primary">View All Jobs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust/Value Section -->
+    <section style="background-color: white; padding: 80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Remote Market?</h2>
+                <p>We are building a trusted ecosystem for the future of work.</p>
+            </div>
+            <div class="job-grid">
+                <div style="text-align: center; padding: 20px;">
+                    <h3 style="margin-bottom: 10px;">🛡️ Scam-Free Verified Jobs</h3>
+                    <p>Every job listing is manually vetted to ensure safety for job seekers.</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <h3 style="margin-bottom: 10px;">✅ Vetted Talent Pool</h3>
+                    <p>Employers get access to professionals who have been screened for skills and identity.</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <h3 style="margin-bottom: 10px;">🇬🇭 Focused on Ghana</h3>
+                    <p>Bridging the gap between Ghanaian potential and the global digital economy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--primary); color: white; padding: 50px 0; margin-top: auto;">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2023 Remote Market. Empowering the Future of Work.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
